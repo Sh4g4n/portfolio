@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shagan | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio dual-mode di Shagandeep Singh: Professional e Friends."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-mode="professional" data-lang="it">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="aurora" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#main">Salta al contenuto</a>
+
+    <header class="site-header" id="top">
+      <div class="shell header-inner">
+        <a class="brand" href="#top" aria-label="Torna in cima">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span id="brandText">Shagandeep Singh</span>
+        </a>
+
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-label="Apri menu"
+          aria-controls="navPanel"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="navPanel">
+          <nav aria-label="Navigazione principale">
+            <ul class="nav-links" id="navLinks"></ul>
+          </nav>
+
+          <div class="switches" role="group" aria-label="Impostazioni visualizzazione">
+            <div class="switch-block">
+              <span class="switch-label" id="modeLabel">Mode</span>
+              <div class="segmented" role="tablist" aria-label="Selezione modalita">
+                <button id="modeProfessional" class="seg-btn" type="button" role="tab" aria-selected="true">
+                  Professional
+                </button>
+                <button id="modeFriends" class="seg-btn" type="button" role="tab" aria-selected="false">
+                  Friends
+                </button>
+              </div>
+            </div>
+
+            <div class="switch-block">
+              <span class="switch-label" id="langLabel">Lang</span>
+              <div class="segmented" role="tablist" aria-label="Selezione lingua">
+                <button id="langIt" class="seg-btn" type="button" role="tab" aria-selected="true">IT</button>
+                <button id="langEn" class="seg-btn" type="button" role="tab" aria-selected="false">EN</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero shell" id="hero"></section>
+      <section class="content shell" id="content"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner" id="footer"></div>
+    </footer>
+
+    <div id="modalRoot" class="modal-root" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
